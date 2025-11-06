@@ -1,2 +1,30 @@
 {
-  
+    "banana": {
+        "nome": "banana",
+        "tipo": "comida",
+        "codigo": 7689,
+        "valor": "8.99",
+        "moeda": "BRL"
+    },
+    "abacaxi": {
+        "nome": "abacaxi",
+        "tipo": "comida",
+        "codigo": 5760,
+        "valor": "8.70",
+        "moeda": "BRL"
+    },
+    "uva": {
+        "nome": "uva",
+        "tipo": "7.40",
+        "codigo": 6446,
+        "valor": "3.50",
+        "moeda": "BRL"
+    },
+    "melancia ": {
+        "nome": "melancia ",
+        "tipo": "comer",
+        "codigo": 6303,
+        "valor": "3.00",
+        "moeda": "BRL"
+    }
+}
