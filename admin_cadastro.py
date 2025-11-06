@@ -1,7 +1,6 @@
-import os
 import random
-import time 
 import json 
+from admin import Admin
 
 class EntrarAdmin:
     def __init__(self, senha="Erik2008", usuario="Erik Lima"):
@@ -20,8 +19,9 @@ class EntrarAdmin:
             verificacao_usuario = int(input("codigo de verificaçao: "))
 
             if int(verificaçao) == verificacao_usuario:
-                print("bem vindo")
                 tentativas = 3
+                admin = Admin("", "", "", "")
+                admin.MenuAdmin()
 
             else:
                 print("envalido")
@@ -33,5 +33,3 @@ class EntrarAdmin:
         else:
             print("senha ou usuario invalido")
 
-eu = EntrarAdmin("Erik2008", "Erik Lima")
-eu.Entrar("Erik2008", "Erik Lima")
