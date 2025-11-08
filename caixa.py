@@ -13,18 +13,24 @@ class Caixa:
         self.produto = produto 
         self.quantidade = quantidade 
 
-    def Verificador(self):
+    def comprar(self):
         produtos = carregar()
         if self.produto in produtos:
             print("existe sim ")
             valor_unitario = float(produtos[self.produto]['valor'])
             valor_final = valor_unitario * self.quantidade
             print(f"{self.produto} X {self.quantidade} = {valor_final}")
+            for i, (nome, dados) in enumerate(produtos.items(), start=1):
+                print(f"{i}. {self.produto} : R$ {float(dados['valor'])}")
 
 
         else:
             print("produto n existe na lista")
             return False
+
+    def listar(self):
+        for i, (nome, produto) in enumerate(carregar().items, start=1):
+            print(i, nome)
 
     def Menu(self):
         while True:
@@ -47,7 +53,11 @@ class Caixa:
                         clear()
                         continue
                     funcionario = Caixa(nome, qunatidade)
-                    funcionario.Verificador(nome, qunatidade)
+                    funcionario.comprar()
+
+                elif escolha == 2:
+                    print("gay")
+
             except ValueError:
                 print("somente numeros")
 
@@ -55,5 +65,6 @@ class Caixa:
 
 
 
-eu = Caixa("banana", 8)
+
+eu = Caixa("banana", 9)
 eu.Menu()
