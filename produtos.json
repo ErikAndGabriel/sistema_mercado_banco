@@ -26,5 +26,12 @@
         "codigo": 6303,
         "valor": "3.00",
         "moeda": "BRL"
+    },
+    "jacare": {
+        "nome": "jacare",
+        "tipo": "comida",
+        "codigo": 8487,
+        "valor": "90.00",
+        "moeda": "BRL"
     }
 }
